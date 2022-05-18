@@ -1,0 +1,11 @@
+_lcd_send: CODE, 1559 0 42
+_lcd_data: CODE, 1492 0 20
+_main: CODE, 1662 0 67
+___lwdiv: CODE, 1797 0 80
+_adc0: CODE, 1601 0 61
+___lwmod: CODE, 1729 0 68
+_hex_dec1: CODE, 1877 0 171
+_adc_init: CODE, 1467 0 5
+_command: CODE, 1472 0 20
+_lcd_init: CODE, 1534 0 25
+Total: 559
