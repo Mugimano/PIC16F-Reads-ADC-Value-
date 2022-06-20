@@ -1,15 +1,15 @@
 #include<pic.h>
-#define _XTAL_FREQ 20000000
-#define RS RB4
-#define En RB5
+#define _XTAL_FREQ 20000000 // 20MHz frequency 
+#define RS RB4 // LCD RS pin define
+#define En RB5 // LCD En pin define
 
-/////LCD Display Functionds///
+/////LCD Display Functions declaration///
 void lcd_init();
 void command(unsigned char);
 void lcd_data(unsigned char); 
 void lcd_send(const char *word); //Pointer end with null charactor 
 
-///ADC conversion Functions////
+///ADC conversion Functions declaration////
 void adc_init();
 void adc0();
 void hex_dec1(unsigned int);
@@ -63,6 +63,8 @@ b=ADRESH; //its 2 bit value so need to convert 8 bit (2^8)
 b=b*256;
 val=(b+a); // ADC value
 }
+
+//LCD fuctions definitions//
 
 void command(unsigned char com)
 {
